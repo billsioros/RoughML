@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!--next-version-placeholder-->
 
+## v1.0.1 (2021-06-20)
+### Fix
+* Removed `src` import(s) prefix ([`cc0c918`](https://github.com/billsioros/thesis/commit/cc0c9186fccc16cfd2b9061d79f44a678f05065c))
+
+**[See all commits in this version](https://github.com/billsioros/thesis/compare/v1.0.0...v1.0.1)**
+
 ## v1.0.0 (2021-06-20)
 ### Fix
 * Set python minimum version to 3.7 ([`d81db21`](https://github.com/billsioros/thesis/commit/d81db219881adff2e094800df75a335fdffdf2f6))
