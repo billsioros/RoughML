@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!--next-version-placeholder-->
 
+## v4.1.0 (2021-07-27)
+### Feature
+* Implement the tuning flow ([`81bf9c0`](https://github.com/billsioros/thesis/commit/81bf9c08bec11d414537e99555bced31be857e0b))
+* Create a hyper parameter tuning CLI ([`5f462d1`](https://github.com/billsioros/thesis/commit/5f462d19e88ec57560a90f46115ba1889bf5bea4))
+* Dataset generation script ([`428b6fd`](https://github.com/billsioros/thesis/commit/428b6fd45673d80f60ee81c6a293f34ae8b32f03))
+* `cli`s aimed towards visualization and dataset generation ([`692a1c0`](https://github.com/billsioros/thesis/commit/692a1c00d27680276fa81bb85c9898c4c7741aa2))
+
+### Fix
+* Make tuning CLI available after installation ([`1b90a34`](https://github.com/billsioros/thesis/commit/1b90a34165398518db46f171bbfdcb293db64e6e))
+* Show default logging level ([`986b6ac`](https://github.com/billsioros/thesis/commit/986b6ac23c96487311821211f65e867aae1d4817))
+
+**[See all commits in this version](https://github.com/billsioros/thesis/compare/v4.0.0...v4.1.0)**
+
 ## v4.0.0 (2021-07-18)
 ### Feature
 * Add hyper parameter tuning interface ([`d486372`](https://github.com/billsioros/thesis/commit/d486372e55c1d3a6e0ba3e233d8b1c266fe16579))
