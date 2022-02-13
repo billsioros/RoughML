@@ -5,6 +5,7 @@ from time import time
 
 import numpy as np
 import pandas as pd
+import torch
 
 from roughml.content.loss import VectorSpaceContentLoss
 from roughml.plot import animate_epochs, as_3d_surface, as_grayscale_image, plot_against
@@ -67,7 +68,9 @@ class TrainingFlow(Configuration):
             with ExceptionLoggingHandler(
                 logger, suppress_exceptions=self.suppress_exceptions
             ) as exception_logging_handler:
-                self.process_dataset(generator, discriminator, path, dataset)
+                dataset_output_dir = self.process_dataset(
+                    generator, discriminator, path, dataset
+                )
 
             end_time = time()
 
@@ -80,6 +83,23 @@ class TrainingFlow(Configuration):
                     elapsed_time=str(timedelta(seconds=end_time - start_time)),
                     succeeded=exception_logging_handler.success,
                 )
+
+            checkpoint_dir = dataset_output_dir / "Checkpoint"
+
+            generator_mt, discriminator_mt = (
+                f"{generator.__class__.__name__}",
+                f"{discriminator.__class__.__name__}",
+            )
+
+            torch.save(
+                generator.state_dict(),
+                checkpoint_dir / f"{generator_mt}.pt",
+            )
+
+            torch.save(
+                discriminator.state_dict(),
+                checkpoint_dir / f"{discriminator_mt}.pt",
+            )
 
     def process_dataset(self, generator, discriminator, path, dataset):
         dataset_output_dir = (
@@ -192,7 +212,7 @@ class TrainingFlow(Configuration):
                 "Discriminator Loss",
                 "Discriminator Output (Real)",
                 "Discriminator Output (Fake)",
-                f"Content Loss ({self.content_loss.type.__name__ if self.content_loss.type else 'None'})",
+                f"Content Loss ({self.content_loss.type.__name__ if hasattr(self.content_loss, 'type') else 'None'})",
                 "Content Loss (VectorSpaceContentLoss)",
             ],
         ).to_csv(str(checkpoint_dir / "per_epoch_data.csv"))
@@ -284,3 +304,5 @@ class TrainingFlow(Configuration):
                         self.plot.save_directory
                         / (self.plot.surface.save_path_fmt % ("fake", i)),
                     )
+
+        return dataset_output_dir
