@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!--next-version-placeholder-->
 
+## v4.7.0 (2022-02-13)
+### Feature
+* **flow:** Add latest epoch checkpoint ([`87884b7`](https://github.com/billsioros/RoughML/commit/87884b715b3687a875dc7184616dabff5d87af82))
+
+**[See all commits in this version](https://github.com/billsioros/RoughML/compare/v4.6.0...v4.7.0)**
+
 ## v4.6.0 (2021-10-19)
 ### Feature
 * **cli:** `benchmark` content similarity script ([`add2ad9`](https://github.com/billsioros/RoughML/commit/add2ad941cfdeca1f9d178cc47a32a44168a0dbf))
