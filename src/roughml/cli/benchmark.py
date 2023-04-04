@@ -71,7 +71,7 @@ def benchmark(similarity):
         similarity_name = similarity_to_names[similarity_cls]
         for number_of_surfaces in [2 * i for i in range(1, 6)]:
             previously_elapsed_training_time, previously_elapsed_evaluation_time = 1, 1
-            for dim_size in [2 ** i for i in range(1, 6)]:
+            for dim_size in [2**i for i in range(1, 6)]:
                 logger.info(
                     "Training and evaluating {0} for {1:02d} surfaces of size {2:03d}x{2:03d}".format(
                         similarity_name,

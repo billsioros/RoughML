@@ -70,7 +70,7 @@ class SurfaceGenerator(ABC):
 
         # According to the Wiener-Khinchine theorem FR is the power spectrum of the desired profile
         FR = np.fft.fft2(R, s=(self.n_points, self.n_points))
-        AMPR = np.sqrt(dtx ** 2 + dty ** 2) * abs(FR)
+        AMPR = np.sqrt(dtx**2 + dty**2) * abs(FR)
 
         # 2nd step: Generate a white noise, normalize it and take its Fourier transform
         X = np.random.rand(self.n_points, self.n_points)
@@ -142,7 +142,7 @@ class NonGaussianSurfaceGenerator(SurfaceGenerator):
         )
 
     def autocorrelation(self, tx, ty):
-        return (self.rms ** 2) * np.exp(
+        return (self.rms**2) * np.exp(
             -(
                 (
                     abs(

@@ -7,7 +7,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.13.0
+#       jupytext_version: 1.14.5
 #   kernelspec:
 #     display_name: ''
 #     name: ''
@@ -298,8 +298,8 @@ training_flow = TrainingFlow(
     suppress_exceptions=False,
 )
 
-# + colab={"base_uri": "https://localhost:8080/", "height": 573} id="836ed418" outputId="f4d7ef3c-027c-4725-9f07-50e4d7c28ff1" tags=[]
-# training_flow(get_generator, get_discriminator)
+# + colab={"base_uri": "https://localhost:8080/", "height": 573} id="836ed418" outputId="f4d7ef3c-027c-4725-9f07-50e4d7c28ff1"
+training_flow(get_generator, get_discriminator)
 
 # + [markdown] id="fe589c1a"
 # # 😎 A CNN based approach
@@ -336,7 +336,6 @@ import functools
 
 from torch.optim import Adam
 
-from roughml.content.loss import ArrayGraph2DContentLoss
 from roughml.data.transforms import To, View
 from roughml.training.epoch import per_epoch
 
@@ -358,7 +357,7 @@ training_flow = TrainingFlow(
                 "params": {"lr": 0.0002, "betas": (0.5, 0.999)},
             },
             "dataloader": {
-                "batch_size": 32,
+                "batch_size": 256,
                 "shuffle": True,
                 "num_workers": 0,
             },
@@ -368,7 +367,7 @@ training_flow = TrainingFlow(
         ],
     },
     content_loss={
-        "type": ArrayGraph2DContentLoss,
+        "type": NGramGraphContentLoss,
         # Uncomment if you want to enable checkpointing
         # "cache": "n_gram_graph_content_loss.pkl",
     },
