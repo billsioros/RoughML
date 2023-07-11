@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.2 (2023-07-11)
+
+### Fix
+
+* Frozen dependencies ([`e0b53df`](https://github.com/billsioros/RoughGAN/commit/e0b53dfa8420ebdaee211981900429c1541b3408))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.1...v4.7.2)**
+
 ## v4.7.1 (2023-07-11)
 
 ### Fix
@@ -21,6 +29,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.2 (2023-07-11)
+
+### Fix
+
+* Frozen dependencies ([`e0b53df`](https://github.com/billsioros/RoughGAN/commit/e0b53dfa8420ebdaee211981900429c1541b3408))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.1...v4.7.2)**
 
 ## v4.7.1 (2023-07-11)
 
