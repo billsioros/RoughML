@@ -1,0 +1,131 @@
+site_name: RoughGAN
+site_description: "A nanorough surfaces oriented ML library"
+site_url: "https://billsioros.github.io/RoughGAN/"
+repo_url: "https://github.com/billsioros/RoughGAN"
+edit_uri: "edit/master/docs/"
+repo_name: "billsioros/RoughGAN"
+copyright: |
+  Copyright &copy; 2023-2023 <a href="https://github.com/billsioros" target="_blank" rel="noopener">Vasilis Sioros</a>
+nav:
+  - Overview: index.md
+  - Example: src/roughgan.ipynb
+  - Code Reference:
+      - CLI:
+        - Benchmark: src/cli/benchmark.md
+  - Contributing:
+      - Contributing Guidelines: CONTRIBUTING.md
+      - Code Of Conduct: CODE_OF_CONDUCT.md
+  - Changelog: CHANGELOG.md
+  - License: LICENSE.md
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+watch:
+  - src/roughgan
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths:
+            - src
+          rendering:
+            show_source: true
+          options:
+            docstring_style: google
+            docstring_options:
+            ignore_init_summary: yes
+            merge_init_into_class: yes
+            show_submodules: no
+  - minify:
+      minify_html: true
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - toc:
+      permalink: ¤
+  - mdx_truly_sane_lists
+  - mkdocs-click
+extra:
+  annotate:
+    json: [.s2]
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/billsioros
+  version:
+    provider: mike

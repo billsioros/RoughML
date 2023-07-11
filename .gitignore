@@ -97,7 +97,7 @@ ipython_config.py
 #Pipfile.lock
 
 # poetry
-#poetry.lock
+# poetry.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
@@ -142,10 +142,8 @@ dmypy.json
 .pytype/
 
 # operating system-related files
-# file properties cache/storage on macOS
-*.DS_Store
-# thumbnail cache on Windows
-Thumbs.db
+*.DS_Store #file properties cache/storage on macOS
+Thumbs.db #thumbnail cache on Windows
 
 # profiling data
 .prof
@@ -153,11 +151,10 @@ Thumbs.db
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
-.vscode
-surfaces/
-ray_results/
-*.csv
-*.pkl
-*.pt
-*.png
-*.mp4
+# Custom
+
+data
+Output
+models
+
+# Custom

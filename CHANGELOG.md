@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). See [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit guidelines.
+
+<!--next-version-placeholder-->
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
@@ -9,43 +16,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## v4.7.0 (2022-02-13)
 ### Feature
-* **flow:** Add latest epoch checkpoint ([`87884b7`](https://github.com/billsioros/RoughML/commit/87884b715b3687a875dc7184616dabff5d87af82))
+* **flow:** Add latest epoch checkpoint ([`87884b7`](https://github.com/billsioros/RoughGAN/commit/87884b715b3687a875dc7184616dabff5d87af82))
 
-**[See all commits in this version](https://github.com/billsioros/RoughML/compare/v4.6.0...v4.7.0)**
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.6.0...v4.7.0)**
 
 ## v4.6.0 (2021-10-19)
 ### Feature
-* **cli:** `benchmark` content similarity script ([`add2ad9`](https://github.com/billsioros/RoughML/commit/add2ad941cfdeca1f9d178cc47a32a44168a0dbf))
+* **cli:** `benchmark` content similarity script ([`add2ad9`](https://github.com/billsioros/RoughGAN/commit/add2ad941cfdeca1f9d178cc47a32a44168a0dbf))
 
 ### Fix
-* **train:** `content_loss.type` null check ([`767616b`](https://github.com/billsioros/RoughML/commit/767616b70ad05c9d23cd1d8d66ade5328868cb32))
-* **loss:** Suppress `.numpy()` AttributeError ([`db2ef70`](https://github.com/billsioros/RoughML/commit/db2ef7047ac56d0642d2aeb29473502e31675a8f))
+* **train:** `content_loss.type` null check ([`767616b`](https://github.com/billsioros/RoughGAN/commit/767616b70ad05c9d23cd1d8d66ade5328868cb32))
+* **loss:** Suppress `.numpy()` AttributeError ([`db2ef70`](https://github.com/billsioros/RoughGAN/commit/db2ef7047ac56d0642d2aeb29473502e31675a8f))
 
-**[See all commits in this version](https://github.com/billsioros/RoughML/compare/v4.5.1...v4.6.0)**
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.5.1...v4.6.0)**
 
 ## v4.5.1 (2021-10-09)
 ### Fix
-* **perceptron:** Remove ReLU ([`d20ed22`](https://github.com/billsioros/RoughML/commit/d20ed22957b4c21dc6b1a7baa43d3fe76a63d215))
+* **perceptron:** Remove ReLU ([`d20ed22`](https://github.com/billsioros/RoughGAN/commit/d20ed22957b4c21dc6b1a7baa43d3fe76a63d215))
 
-**[See all commits in this version](https://github.com/billsioros/RoughML/compare/v4.5.0...v4.5.1)**
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.5.0...v4.5.1)**
 
 ## v4.5.0 (2021-09-30)
 ### Feature
-* **train:** Generate per epoch data csv ([`c154585`](https://github.com/billsioros/RoughML/commit/c154585fd6c78387dff82dd4d6d565ce1db1e2d6))
+* **train:** Generate per epoch data csv ([`c154585`](https://github.com/billsioros/RoughGAN/commit/c154585fd6c78387dff82dd4d6d565ce1db1e2d6))
 
 ### Fix
-* **plot:** Do not close plot on Windows ([`ee82ad8`](https://github.com/billsioros/RoughML/commit/ee82ad8eff0624292e4dd63496bc3ccec18ee0d7))
-* **loss:** `VectorSpaceContentLoss` expects numpy matrix ([`5d3acf8`](https://github.com/billsioros/RoughML/commit/5d3acf86a56b018047a6addc0ceff41d7717f1df))
+* **plot:** Do not close plot on Windows ([`ee82ad8`](https://github.com/billsioros/RoughGAN/commit/ee82ad8eff0624292e4dd63496bc3ccec18ee0d7))
+* **loss:** `VectorSpaceContentLoss` expects numpy matrix ([`5d3acf8`](https://github.com/billsioros/RoughGAN/commit/5d3acf86a56b018047a6addc0ceff41d7717f1df))
 
-**[See all commits in this version](https://github.com/billsioros/RoughML/compare/v4.4.0...v4.5.0)**
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.4.0...v4.5.0)**
 
 ## v4.4.0 (2021-09-29)
 ### Feature
-* **loss:** Normalize `VectorSpaceContentLoss` ([`430ac52`](https://github.com/billsioros/RoughML/commit/430ac52a923e6293bbd8137ca4136a15568635cf))
-* **train:** Plot fourier/histogram based content loss ([`22c038c`](https://github.com/billsioros/RoughML/commit/22c038c6f6de29419832f676f80b942b507469ca))
-* **dataset:** Make dataset path optional on CLI ([`4c9b2a9`](https://github.com/billsioros/RoughML/commit/4c9b2a99b1d5e901d75369b4d94ef3ef46025b70))
+* **loss:** Normalize `VectorSpaceContentLoss` ([`430ac52`](https://github.com/billsioros/RoughGAN/commit/430ac52a923e6293bbd8137ca4136a15568635cf))
+* **train:** Plot fourier/histogram based content loss ([`22c038c`](https://github.com/billsioros/RoughGAN/commit/22c038c6f6de29419832f676f80b942b507469ca))
+* **dataset:** Make dataset path optional on CLI ([`4c9b2a9`](https://github.com/billsioros/RoughGAN/commit/4c9b2a99b1d5e901d75369b4d94ef3ef46025b70))
 
-**[See all commits in this version](https://github.com/billsioros/RoughML/compare/v4.3.0...v4.4.0)**
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.3.0...v4.4.0)**
 
 ## v4.3.0 (2021-08-23)
 ### Feature
