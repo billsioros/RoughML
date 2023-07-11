@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.3 (2023-07-11)
+
+### Fix
+
+* **deps:** Update dependency torch to v1.13.1 [security] ([`ed17d10`](https://github.com/billsioros/RoughGAN/commit/ed17d10c83db4eba185a03d79584434a014320dc))
+
+### Documentation
+
+* Update the `README` ([`0dfca14`](https://github.com/billsioros/RoughGAN/commit/0dfca14427bbe2e0da1f2a58c20092d3419fc755))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.2...v4.7.3)**
+
 ## v4.7.2 (2023-07-11)
 
 ### Fix
@@ -29,6 +41,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.3 (2023-07-11)
+
+### Fix
+
+* **deps:** Update dependency torch to v1.13.1 [security] ([`ed17d10`](https://github.com/billsioros/RoughGAN/commit/ed17d10c83db4eba185a03d79584434a014320dc))
+
+### Documentation
+
+* Update the `README` ([`0dfca14`](https://github.com/billsioros/RoughGAN/commit/0dfca14427bbe2e0da1f2a58c20092d3419fc755))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.2...v4.7.3)**
 
 ## v4.7.2 (2023-07-11)
 
