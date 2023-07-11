@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.4 (2023-07-11)
+
+### Fix
+
+* Set `torch` to `v1.9.0` ([`2b096c2`](https://github.com/billsioros/RoughGAN/commit/2b096c2bca0a815381c0844ff3568f98e57a748b))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.3...v4.7.4)**
+
 ## v4.7.3 (2023-07-11)
 
 ### Fix
@@ -41,6 +49,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.4 (2023-07-11)
+
+### Fix
+
+* Set `torch` to `v1.9.0` ([`2b096c2`](https://github.com/billsioros/RoughGAN/commit/2b096c2bca0a815381c0844ff3568f98e57a748b))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.3...v4.7.4)**
 
 ## v4.7.3 (2023-07-11)
 
