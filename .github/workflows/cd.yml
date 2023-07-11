@@ -40,6 +40,14 @@ jobs:
         run: |
           export RELEASE_TAG_VERSION="$( poetry run semantic-release print-version --current )"
           echo "RELEASE_TAG_VERSION=${RELEASE_TAG_VERSION}" >> $GITHUB_ENV
+      - name: Configure git
+        run: |
+          git config --global user.name Docs deploy
+          git config --global user.email docs@dummy.bot.com
+      - name: Publish the documentation
+        run: |
+          poetry run mike deploy --push --update-aliases ${RELEASE_TAG_VERSION} latest
+          poetry run mike set-default --push latest
       - name: Publish to GitHub packages
         uses: whoan/docker-build-with-cache-action@v5
         with:
@@ -49,11 +57,3 @@ jobs:
           image_name: ${{ github.repository }}/roughgan
           image_tag: ${{ env.RELEASE_TAG_VERSION }},latest
           context: ./docker/
-      - name: Configure git
-        run: |
-          git config --global user.name Docs deploy
-          git config --global user.email docs@dummy.bot.com
-      - name: Publish the documentation
-        run: |
-          poetry run mike deploy --push --update-aliases ${RELEASE_TAG_VERSION} latest
-          poetry run mike set-default --push latest
