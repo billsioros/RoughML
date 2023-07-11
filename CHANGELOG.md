@@ -121,7 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## v4.2.2 (2021-08-03)
 ### Fix
-* Call absoluate on vector based content loss `__call__` ([`99fd205`](https://github.com/billsioros/thesis/commit/99fd20593901454b331c71b6ca0b0942e1d1aae0))
+* Call absolute on vector based content loss `__call__` ([`99fd205`](https://github.com/billsioros/thesis/commit/99fd20593901454b331c71b6ca0b0942e1d1aae0))
 
 **[See all commits in this version](https://github.com/billsioros/thesis/compare/v4.2.1...v4.2.2)**
 
@@ -177,7 +177,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## v3.1.0 (2021-07-15)
 ### Feature
-* Separatelly log/plot `content_loss` ([`fc16be6`](https://github.com/billsioros/thesis/commit/fc16be6142c7435d900ef1538295c9826ede3d60))
+* Separately log/plot `content_loss` ([`fc16be6`](https://github.com/billsioros/thesis/commit/fc16be6142c7435d900ef1538295c9826ede3d60))
 * Instantiate models per dataset ([`f7bee53`](https://github.com/billsioros/thesis/commit/f7bee5310ed03ea9f3cbee64361d8b26d1ec5798))
 * Optionally suppress exceptions on training flow ([`122a055`](https://github.com/billsioros/thesis/commit/122a0556742b85a579576a6cf96b28ac755580d5))
 * Separate limits for dataset/surface loading ([`4754d72`](https://github.com/billsioros/thesis/commit/4754d72ec3383192fb5ceb6385ee8a6daeb2f5d3))
