@@ -70,6 +70,8 @@
 
 In this work, we look at how a Generative Adversarial Network (GAN)-based strategy, given a nanorough surface data set, may learn to produce nanorough surface samples that are statistically equivalent to the ones belonging to the training data set. We also look at how combining the GAN framework with a variety of nanorough similarity measures might improve the realisticity of the synthesized nanorough surfaces. We showcase via multiple experiments that our framework is able to produce sufficiently realistic nanorough surfaces, in many cases indistinguishable from real ones.
 
+> **Attention**: We are in the midst of updating this repository so a few things might not work as expected :fire:
+
 ## :cd: Getting started
 
 You can run the model locally using the following commands:
