@@ -80,7 +80,7 @@ class SurfaceGenerator(ABC):
 
         XF = np.fft.fft2(X, s=(self.n_points, self.n_points))
 
-        # 3nd step: Multiply the two Fourier transforms
+        # 3rd step: Multiply the two Fourier transforms
         YF = XF * np.sqrt(AMPR)
 
         # 4th step: Perform the inverse Fourier transform of YF and get the desired surface

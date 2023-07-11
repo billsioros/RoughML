@@ -71,7 +71,6 @@ if SEED is not None:
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-from datetime import datetime
 
 training_callback = None
 
@@ -83,17 +82,20 @@ def logging_callback(config, logging_dir):
 
     return config
 
+
 from roughgan.models import PerceptronGenerator
 
 
 def get_generator():
     return PerceptronGenerator.from_device(device)
 
+
 from roughgan.models import PerceptronDiscriminator
 
 
 def get_discriminator(generator):
     return PerceptronDiscriminator.from_generator(generator)
+
 
 from torch.nn import BCELoss
 
@@ -114,7 +116,6 @@ training_flow = TrainingFlow(
     training={
         "manager": {
             "benchmark": True,
-
             "train_epoch": per_epoch,
             "log_every_n": 10,
             "criterion": {"instance": criterion},
@@ -136,7 +137,6 @@ training_flow = TrainingFlow(
     },
     content_loss={
         "type": NGramGraphContentLoss,
-
     },
     data={
         "loader": functools.partial(
@@ -165,11 +165,13 @@ from roughgan.models import CNNGenerator
 def get_generator():
     return CNNGenerator.from_device(device)
 
+
 from roughgan.models import CNNDiscriminator
 
 
 def get_discriminator(generator):
     return CNNDiscriminator.from_generator(generator)
+
 
 from torch.nn import BCELoss
 
@@ -188,7 +190,6 @@ training_flow = TrainingFlow(
     training={
         "manager": {
             "benchmark": True,
-
             "train_epoch": per_epoch,
             "log_every_n": 10,
             "criterion": {"instance": criterion},
@@ -210,7 +211,6 @@ training_flow = TrainingFlow(
     },
     content_loss={
         "type": ArrayGraph2DContentLoss,
-
     },
     data={
         "loader": functools.partial(

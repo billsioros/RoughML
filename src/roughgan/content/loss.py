@@ -189,10 +189,9 @@ class HPG2DParallelContentLoss(HPG2DContentLoss):
 class VectorSpaceContentLoss(ContentLoss):
     """A content loss that represents surfaces as vectors.
 
-    The content loss calculates the historgram and the fourier transform corresponding
-    to each provided surface, in order to construct a vector corresponding to that
-    surface. It then utilizes conventional vector distance metrics to calculate the loss
-    value.
+    The content loss calculates the histogram and the fourier transform corresponding to
+    each provided surface, in order to construct a vector corresponding to that surface.
+    It then utilizes conventional vector distance metrics to calculate the loss value.
     """
 
     def __init__(self, **kwargs) -> None:

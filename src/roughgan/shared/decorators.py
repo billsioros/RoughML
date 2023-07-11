@@ -30,12 +30,12 @@ def debug(method):
 
     In more detai, the information emitted is:
         - The function's name.
-        - Its positional and keyword arguements for the function call at hand.
+        - Its positional and keyword arguments for the function call at hand.
         - Any exception that the function `raises`.
 
-    In addition to that, the `debug` decorator passes a special boolean keyword arguement
+    In addition to that, the `debug` decorator passes a special boolean keyword argument
     by the name `debug`, if and only if it is included in the function signature.
-    You can then utilize this arguement inside the decorated function and emit additional
+    You can then utilize this argument inside the decorated function and emit additional
     information.
     """
     signature = inspect.signature(method)
