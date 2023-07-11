@@ -20,9 +20,9 @@
       alt="CD"
     />
   </a>
-  <a href="https://results.pre-commit.ci/latest/github/billsioros/RoughGAN/master">
+  <a href="https://results.pre-commit.ci/latest/github/billsioros/RoughML/master">
     <img
-      src="https://results.pre-commit.ci/badge/github/billsioros/RoughGAN/master.svg"
+      src="https://results.pre-commit.ci/badge/github/billsioros/RoughML/master.svg"
       alt="pre-commit.ci status"
     />
   </a>
@@ -43,7 +43,7 @@
       alt="License"
     />
   </a>
-  <a target="_blank" href="https://colab.research.google.com/github/billsioros/RoughML">
+  <a target="_blank" href="https://colab.research.google.com/github/billsioros/RoughGAN/blob/master/docs/src/roughgan.ipynb">
     <img
       src="https://colab.research.google.com/assets/colab-badge.svg"
       alt="Open In Colab"/>
@@ -83,9 +83,7 @@ The project's documentation can be found [here](https://billsioros.github.io/Rou
 
 ## :heart: Support the project
 
-If you would like to contribute to the project, please go through the [Contributing Guidelines](https://billsioros.github.io/RoughGAN/latest/CONTRIBUTING/) first.
-
-You can also support the project by [**Buying me a coffee! ☕**](https://www.buymeacoffee.com/billsioros).
+If you would like to contribute to the project, please go through the [Contributing Guidelines](https://billsioros.github.io/RoughGAN/latest/CONTRIBUTING/) first. You can also support the project by [**Buying me a coffee! ☕**](https://www.buymeacoffee.com/billsioros).
 
 ## :bookmark_tabs: Citation
 
@@ -108,4 +106,4 @@ You can also support the project by [**Buying me a coffee! ☕**](https://www.bu
 }
 ```
 
-This project was generated with [`billsioros/cookiecutter-pypackage`](https://github.com/billsioros/cookiecutter-pypackage) cookiecutter template.
+This project was generated using the [`billsioros/cookiecutter-pypackage`](https://github.com/billsioros/cookiecutter-pypackage) cookiecutter template.
