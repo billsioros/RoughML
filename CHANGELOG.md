@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.5 (2023-07-12)
+
+### Fix
+
+* **deps:** Update dependency kaleido to v0.2.1.post1 ([`44fdb78`](https://github.com/billsioros/RoughGAN/commit/44fdb78e59769e42e947a6b866e73f65f1a741e6))
+
+### Documentation
+
+* Remove `all-contributors` spec ([`49a9e49`](https://github.com/billsioros/RoughGAN/commit/49a9e496c4a688fbf419b7e97c1dda55f4e5edf6))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.4...v4.7.5)**
+
 ## v4.7.4 (2023-07-11)
 
 ### Fix
@@ -49,6 +61,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.5 (2023-07-12)
+
+### Fix
+
+* **deps:** Update dependency kaleido to v0.2.1.post1 ([`44fdb78`](https://github.com/billsioros/RoughGAN/commit/44fdb78e59769e42e947a6b866e73f65f1a741e6))
+
+### Documentation
+
+* Remove `all-contributors` spec ([`49a9e49`](https://github.com/billsioros/RoughGAN/commit/49a9e496c4a688fbf419b7e97c1dda55f4e5edf6))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.4...v4.7.5)**
 
 ## v4.7.4 (2023-07-11)
 
