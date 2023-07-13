@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.6 (2023-07-13)
+
+### Fix
+
+* **deps:** Update dependency torchvision to v0.15.2 ([`dcaf366`](https://github.com/billsioros/RoughGAN/commit/dcaf366c23ecbe29f4dea020bd39cb6c0d0218f8))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.5...v4.7.6)**
+
 ## v4.7.5 (2023-07-12)
 
 ### Fix
@@ -61,6 +69,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.6 (2023-07-13)
+
+### Fix
+
+* **deps:** Update dependency torchvision to v0.15.2 ([`dcaf366`](https://github.com/billsioros/RoughGAN/commit/dcaf366c23ecbe29f4dea020bd39cb6c0d0218f8))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.5...v4.7.6)**
 
 ## v4.7.5 (2023-07-12)
 
