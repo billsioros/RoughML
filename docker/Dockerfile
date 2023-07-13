@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster as python-base
+FROM python:3.11-slim-buster as python-base
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
