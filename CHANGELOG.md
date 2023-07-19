@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.7 (2023-07-19)
+
+### Fix
+
+* Revert `relekang/python-semantic-release` update ([`b81141a`](https://github.com/billsioros/RoughGAN/commit/b81141ac30309e802390500a6626e0af43a8d2eb))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.6...v4.7.7)**
+
 ## v4.7.6 (2023-07-13)
 
 ### Fix
@@ -69,6 +77,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.7 (2023-07-19)
+
+### Fix
+
+* Revert `relekang/python-semantic-release` update ([`b81141a`](https://github.com/billsioros/RoughGAN/commit/b81141ac30309e802390500a6626e0af43a8d2eb))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.6...v4.7.7)**
 
 ## v4.7.6 (2023-07-13)
 
