@@ -56,4 +56,20 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           image_name: ${{ github.repository }}/roughgan
           image_tag: ${{ env.RELEASE_TAG_VERSION }},latest
-          context: ./docker/
+
+  huggingface:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - name: Check large files
+        uses: ActionsDesk/lfs-warning@v2.0
+        with:
+          filesizelimit: 10485760 # this is 10MB so we can sync to HF Spaces
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+      - name: Push to hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: git push https://VaMaSi:$HF_TOKEN@huggingface.co/spaces/VaMaSi/RoughGAN main
