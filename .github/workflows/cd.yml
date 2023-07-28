@@ -56,4 +56,3 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           image_name: ${{ github.repository }}/roughgan
           image_tag: ${{ env.RELEASE_TAG_VERSION }},latest
-          context: ./docker/
