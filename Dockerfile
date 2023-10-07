@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.2.0-runtime-ubuntu22.04 as cuda-base
+FROM nvidia/cuda:11.4.3-cudnn8-devel-ubuntu18.04 as cuda-base
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -58,14 +58,14 @@ ENV PIP_NO_CACHE_DIR=off \
     POETRY_HOME=/opt/poetry \
     POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_CREATE=0 \
-    POETRY_VERSION=1.2.0b1
+    POETRY_VERSION=1.2.2
 
 ENV POETRY_CACHE_DIR=${POETRY_HOME}/.cache \
     PATH=${POETRY_HOME}/bin:${PATH}
 
 COPY --from=python-base ${PYENV_ROOT} ${PYENV_ROOT}
 
-RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python
+RUN curl -sSL https://install.python-poetry.org | python -
 
 RUN mkdir -p ${POETRY_CACHE_DIR}/virtualenvs
 
@@ -89,7 +89,8 @@ WORKDIR ${WORKSPACE}
 COPY pyproject.toml poetry.lock ${WORKSPACE}
 
 RUN poetry env use ${PYTHON_VERSION} && \
-    poetry install --no-dev
+    poetry run pip install --upgrade pip && \
+    poetry install --without dev
 
 FROM build-base as build
 
@@ -99,7 +100,6 @@ COPY src ${WORKSPACE}
 
 USER ${USER}
 
-# TODO: Template code
-CMD poetry run python alpaca_mot/main.py train \
-    --dataset ./data/small \
-    --state ./models/model
+CMD poetry run python roughgan/model.py train \
+    --dataset data \
+    --output output
