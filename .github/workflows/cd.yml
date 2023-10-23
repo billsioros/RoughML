@@ -49,7 +49,7 @@ jobs:
           poetry run mike deploy --push --update-aliases ${RELEASE_TAG_VERSION} latest
           poetry run mike set-default --push latest
       - name: Publish to GitHub packages
-        uses: whoan/docker-build-with-cache-action@v6
+        uses: whoan/docker-build-with-cache-action@v8
         with:
           registry: docker.pkg.github.com
           username: ${{ github.actor }}
