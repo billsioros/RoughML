@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.8 (2024-08-13)
+
+### Fix
+
+* **deps:** Update dependency torch to v2 [security] ([`ae9dae6`](https://github.com/billsioros/RoughGAN/commit/ae9dae62e1e2cd0ec034018b7eee0613891c9221))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.7...v4.7.8)**
+
 ## v4.7.7 (2023-07-19)
 
 ### Fix
@@ -77,6 +85,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.8 (2024-08-13)
+
+### Fix
+
+* **deps:** Update dependency torch to v2 [security] ([`ae9dae6`](https://github.com/billsioros/RoughGAN/commit/ae9dae62e1e2cd0ec034018b7eee0613891c9221))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.7...v4.7.8)**
 
 ## v4.7.7 (2023-07-19)
 
