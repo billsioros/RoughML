@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 <!--next-version-placeholder-->
 
+## v4.7.9 (2024-12-04)
+
+### Fix
+
+* **deps:** Update dependency kaleido to v0.4.1 ([`254320a`](https://github.com/billsioros/RoughGAN/commit/254320a628ddf9c34c5b178fb1991526edde88ad))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.8...v4.7.9)**
+
 ## v4.7.8 (2024-08-13)
 
 ### Fix
@@ -85,6 +93,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <!--next-version-placeholder-->
+
+## v4.7.9 (2024-12-04)
+
+### Fix
+
+* **deps:** Update dependency kaleido to v0.4.1 ([`254320a`](https://github.com/billsioros/RoughGAN/commit/254320a628ddf9c34c5b178fb1991526edde88ad))
+
+**[See all commits in this version](https://github.com/billsioros/RoughGAN/compare/v4.7.8...v4.7.9)**
 
 ## v4.7.8 (2024-08-13)
 
